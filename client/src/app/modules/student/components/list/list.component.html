@@ -1,0 +1,27 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">ID</th>
+      <th scope="col">姓名</th>
+      <th scope="col">性别</th>
+      <th scope="col">年龄</th>
+      <th scope="col">住址</th>
+      <th scope="col">学号</th>
+      <th scope="col">操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of students; let idx = index;">
+      <td>{{idx}}</td>
+      <td>{{s.id}}</td>
+      <td>{{s.name}}</td>
+      <td>{{s.sex}}</td>
+      <td>{{s.age}}</td>
+      <td>{{s.address}}</td>
+      <td>{{s.code}}</td>
+      <td>修改\删除</td>
+    </tr>
+
+  </tbody>
+</table>
